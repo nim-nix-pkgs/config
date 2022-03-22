@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-config-0_1_1.flake = false;
+  inputs.src-config-0_1_1.ref   = "refs/tags/0.1.1";
   inputs.src-config-0_1_1.owner = "vsajip";
-  inputs.src-config-0_1_1.ref   = "0_1_1";
   inputs.src-config-0_1_1.repo  = "nim-cfg-lib";
   inputs.src-config-0_1_1.type  = "github";
   
