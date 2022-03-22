@@ -1,5 +1,5 @@
 {
-  description = ''A library for working with the CFG configuration format'';
+  description = ''A configuration system'';
 
   inputs.flakeNimbleLib.owner = "riinr";
   inputs.flakeNimbleLib.ref   = "master";
@@ -9,13 +9,14 @@
   
   inputs.src-config-main.flake = false;
   inputs.src-config-main.owner = "vsajip";
-  inputs.src-config-main.ref   = "refs/heads/main";
+  inputs.src-config-main.ref   = "main";
   inputs.src-config-main.repo  = "nim-cfg-lib";
   inputs.src-config-main.type  = "github";
   
   inputs."nre".owner = "nim-nix-pkgs";
   inputs."nre".ref   = "master";
   inputs."nre".repo  = "nre";
+  inputs."nre".dir   = "2_0_2";
   inputs."nre".type  = "github";
   inputs."nre".inputs.nixpkgs.follows = "nixpkgs";
   inputs."nre".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
@@ -23,6 +24,7 @@
   inputs."timezones".owner = "nim-nix-pkgs";
   inputs."timezones".ref   = "master";
   inputs."timezones".repo  = "timezones";
+  inputs."timezones".dir   = "v0_5_4";
   inputs."timezones".type  = "github";
   inputs."timezones".inputs.nixpkgs.follows = "nixpkgs";
   inputs."timezones".inputs.flakeNimbleLib.follows = "flakeNimbleLib";
