@@ -11,6 +11,7 @@
   inputs.src-config-main.ref   = "refs/heads/main";
   inputs.src-config-main.owner = "vsajip";
   inputs.src-config-main.repo  = "nim-cfg-lib";
+  inputs.src-config-main.dir   = "";
   inputs.src-config-main.type  = "github";
   
   inputs."nre".owner = "nim-nix-pkgs";
